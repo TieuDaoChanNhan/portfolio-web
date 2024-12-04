@@ -11,37 +11,37 @@ class CombineSubtitleText extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const Responsive(
-          desktop: AnimatedSubtitleText(
-              start: 30, end: 40, text: 'Flutter '),
-          largeMobile: AnimatedSubtitleText(
-              start: 30, end: 25, text: 'Flutter '),
-          mobile: AnimatedSubtitleText(
-              start: 25, end: 20, text: 'Flutter '),
-          tablet: AnimatedSubtitleText(
-              start: 40, end: 30, text: 'Flutter '),
-        ),
+        // const Responsive(
+        //   desktop: AnimatedSubtitleText(
+        //       start: 30, end: 40, text: 'Flutter '),
+        //   largeMobile: AnimatedSubtitleText(
+        //       start: 30, end: 25, text: 'Flutter '),
+        //   mobile: AnimatedSubtitleText(
+        //       start: 25, end: 20, text: 'Flutter '),
+        //   tablet: AnimatedSubtitleText(
+        //       start: 40, end: 30, text: 'Flutter '),
+        // ),
         (kIsWeb && Responsive.isLargeMobile(context)
             ? const Responsive(
           desktop: AnimatedSubtitleText(
               start: 30,
               end: 40,
-              text: 'Developer ',
+              text: 'Computer Science ',
               gradient: true),
           largeMobile: AnimatedSubtitleText(
               start: 30,
               end: 25,
-              text: 'Developer ',
+              text: 'Computer Science ',
               gradient: true),
           mobile: AnimatedSubtitleText(
               start: 25,
               end: 20,
-              text: 'Developer ',
+              text: 'Computer Science ',
               gradient: true),
           tablet: AnimatedSubtitleText(
               start: 40,
               end: 30,
-              text: 'Developer ',
+              text: 'Computer Science ',
               gradient: true),
         )
             : ShaderMask(
@@ -55,22 +55,22 @@ class CombineSubtitleText extends StatelessWidget {
             desktop: AnimatedSubtitleText(
                 start: 30,
                 end: 40,
-                text: 'Developer ',
+                text: 'Computer Science ',
                 gradient: false),
             largeMobile: AnimatedSubtitleText(
                 start: 30,
                 end: 25,
-                text: 'Developer ',
+                text: 'Computer Science ',
                 gradient: false),
             mobile: AnimatedSubtitleText(
                 start: 25,
                 end: 20,
-                text: 'Developer ',
+                text: 'Computer Science ',
                 gradient: true),
             tablet: AnimatedSubtitleText(
                 start: 40,
                 end: 30,
-                text: 'Developer ',
+                text: 'Computer Science ',
                 gradient: false),
           ),
         ))
